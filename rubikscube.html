@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>WebGL - Rubik's cube</title>
+    <meta name="description" content="WebGL - rubik's cube">
+
+    <script src="data.js"></script>
+    <script src="program.js"></script>
+    <script src="arraybuffer.js"></script>
+    <script src="quad.js"></script>
+    <script src="matrix.js"></script>
+
+    <style>
+      body {text-align: center;}
+      input[type=range] {width: 600px;}
+    </style>
+  </head>
+
+  <body>
+	<h1><i>Rubik's cube</i></h1>
+    <h2><i id="fps">FPS : 0</i></h2>
+    <p><canvas id="canvas:rubikscube" width="1280" height="720"></canvas></p>
+    <script src="rubikscube.js"></script>
+    <script>new Rubikscube ('canvas:rubikscube');</script>
+  </body>
+</html>
