@@ -10,14 +10,50 @@ class Quad
     this.z = _z;
     this.r = Matrix.ID;
 
+    var color = [
+      [1, 0, 0], //red
+      [0, 0, 1], //blue
+      [1, 0.20, 0], //orange
+      [0, 1, 0], //green
+      [1, 1, 1], //white
+      [1, 1, 0] //yellow
+    ]
+
+    if(_x >= 0)
+    {
+      color[3] = [0, 0, 0];
+    } 
+    if(_x <= 0)
+    {
+      color[1] = [0, 0, 0];
+    }
+
+    if(_y >= 0)
+    {
+      color[5] = [0, 0, 0];
+    } 
+    if(_y <= 0)
+    {
+      color[4] = [0, 0, 0];
+    }
+
+    if(_z >= 0)
+    {
+      color[2] = [0, 0, 0];
+    } 
+    if(_z <= 0)
+    {
+      color[0] = [0, 0, 0];
+    }
+
     var poscolor = new Array();
     var k = 0;
-    for(var i = 0;i<6; ++i)
+    for(var i = 0; i<6 ; ++i)
     {
-      for(var j = 0;j<6; ++j)
+      for(var j = 0; j<6 ; ++j)
       {
         poscolor.push(Quad.VERTICES[  Quad.INDICES[k++]  ]);
-        poscolor.push(Quad.COLOR[i]);
+        poscolor.push(color[i]);
         poscolor.push(Quad.NORMAL[i]);
       }
     }
@@ -123,15 +159,6 @@ Quad.VERTICES = [
   [+1, +1, -1],
   [-1, -1, -1],
   [+1, -1, -1]
-]
-
-Quad.COLOR = [
-  [1, 0, 0], //red
-  [0, 0, 1], //blue
-  [1, 0.20, 0], //orange
-  [0, 1, 0], //green
-  [1, 1, 1], //white
-  [1, 1, 0] //yellow
 ]
 
 Quad.NORMAL = [
