@@ -57,4 +57,4 @@ install:
   - npm -g install acorn
 
 script:
-  -  for f in Src/*js ; do acorn --silent $f ; done
+  -  for f in src/*js ; do acorn --silent $f ; done
