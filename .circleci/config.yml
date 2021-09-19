@@ -1,0 +1,12 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+          name: Acorn
+          command: |
+            npm install --prefix=$HOME/.local --global acorn
+            for f in src/*js ; do acorn --silent $f ; done

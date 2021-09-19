@@ -2,9 +2,9 @@
 
 Rubik's cube create with WebGL.
 
-## Travis
+## Circle-CI
 
-[![Build Status](https://travis-ci.com/PamplemousseMR/RubiksCube.svg?branch=master)](https://travis-ci.com/PamplemousseMR/RubiksCube)
+[![Build Status](https://circleci.com/gh/PamplemousseMR/RubiksCube/tree/master.svg?style=svg)](https://circleci.com/gh/PamplemousseMR/RubiksCube/tree/master)
 
 ### Prerequisites
 
