@@ -2,9 +2,10 @@
 
 Rubik's cube create with WebGL.
 
-## Circle-CI
+## CI
 
-[![Build Status](https://circleci.com/gh/PamplemousseMR/RubiksCube/tree/master.svg?style=svg)](https://circleci.com/gh/PamplemousseMR/RubiksCube/tree/master)
+![Build Status](https://github.com/PamplemousseMR/RubiksCube/actions/workflows/build.yml/badge.svg)
+
 
 ### Prerequisites
 
